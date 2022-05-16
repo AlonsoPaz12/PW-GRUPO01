@@ -21,22 +21,59 @@
     <div class="container">
 
       <div class="row">
-        <h1 class="col">[Nombre paciente]</h1>
+        <h1 class="col ms-4">Gabriel Cruz</h1>
       </div>
 
       <div class="row mt-4 ps-4 justify-content-between">
-        <div class="col-3 border border-success align-self-center">
+        <div class="col-3">
           <figure>
             <img src="images/Gabriel.jpg" alt="foto de paciente" width="80%" />
           </figure>
         </div>
-        <div class="col-7 border border-success">
-          <p>[Datos personales del paciente]</p>
+        <div class="col-7">
+          <h3>Datos Personales:</h3>
+          <ul class="list-group list-group-flush border border-success">
+            <li class="list-group-item"><span class="fw-bold">Edad: </span><span>22</span></li>
+            <li class="list-group-item"><span class="fw-bold">Correo: </span><span>Correo: correo@prueba.com</span></li>
+            <li class="list-group-item"><span class="fw-bold">Celular: </span><span>987654321</span></li>
+            <li class="list-group-item"><span class="fw-bold">Dirección: </span><span>Av. LasManzanas 123</span></li>
+            <li class="list-group-item"><span class="fw-bold">DNI: </span><span>79846512</span></li>
+          </ul>
         </div>
       </div>
 
-      <div class="row mt-5 pb-5 border border-success">
-        <p>[Información clínica del paciente]</p>
+      <div class="row mt-5 pb-5">
+        <h3>Historia Clínica:</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Motivo Consulta</th>
+              <th scope="col">Medicamentos recetados</th>
+              <th scope="col">Ver más</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/05/2022</th>
+              <td>Dolor Abdominal</td>
+              <td>Duspatalin</td>
+              <td><button type="button" class="btn btn-outline-success">Ver más</button></td>
+            </tr>
+            <tr>
+              <td>24/04/2022</td>
+              <td>Vómitos</td>
+              <td>Kaopectate</td>
+              <td><button type="button" class="btn btn-outline-success">Ver más</button></td>
+            </tr>
+            <tr>
+              <td>17/04/2022</td>
+              <td>Dolor de cabeza</td>
+              <td>Aspirina</td>
+              <td><button type="button" class="btn btn-outline-success">Ver más</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="row mt-4 justify-content-evenly ">
