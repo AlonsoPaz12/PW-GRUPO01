@@ -85,4 +85,9 @@
     font-weight: bold;
 
 }
-/* CALENDARIO CITAS*/
+/*PARA QUE EL FOOTER SE PONGA ABAJO*/
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
