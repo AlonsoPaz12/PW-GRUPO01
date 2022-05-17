@@ -1,7 +1,14 @@
+/*FORMATO GENERAL*/
 *{
     padding: 0px;
     font-family: Roboto;
 }
+a{
+    color: inherit;
+}
+
+
+
 
 /*FORMULARIOS*/
 .titulo{
@@ -32,10 +39,14 @@
     box-shadow: inset 0 1px 1px #8FD14F, 0 0 8px #8FD14F;
   }
 
-/*PANTALLA LOGUEO*/
+/*---------------------------------NAV*/
 .fondo-nav{
     background-color: #77C13B;
 }
+.text-nav{
+    color: white;
+    font-size: large;
+} 
 
 /*PANTALLA MANEJO CITAS*/
 #outer
@@ -85,6 +96,8 @@
     font-weight: bold;
 
 }
+
+
 /*PARA QUE EL FOOTER SE PONGA ABAJO*/
 body{
     display: grid;
