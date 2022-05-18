@@ -8195,6 +8195,7 @@ h1, h2, h3, h4, h5,
   height: 100%;
   width: 50%;
   float: right;
+  background-color: #77C13B;
   margin: 0px auto;
   display: inline-block;
   padding: 0px;
@@ -8324,7 +8325,7 @@ h1, h2, h3, h4, h5,
   transition: .2s ease all;
   color: white;
   border: none;
-  background: #7e0cf5; }
+  background: #DA0063; }
   .button.button-white {
     background: #fff;
     color: #000; }
@@ -8334,7 +8335,7 @@ h1, h2, h3, h4, h5,
     outline: none; }
 
 #cancel-button {
-  background: #cd4dcc; }
+  background: #77C13B; }
 
 #add-button {
   display: block;
@@ -8397,7 +8398,7 @@ h1, h2, h3, h4, h5,
 /*  Dates table */
 .table-date {
   cursor: default;
-  color: #2b2b2b;
+  color:#00;
   height: 26px;
   width: 26px;
   font-size: 15px;
@@ -8412,11 +8413,11 @@ h1, h2, h3, h4, h5,
   position: relative; }
 
 .table-date:not(.nil):hover {
-  border-color: #cd4dcc; }
+  border-color: #DA0063; }
 
 .event-date {
-  border-color: #7e0cf5;
-  background: #7e0cf5;
+  border-color: #DA0063;
+  background: #f58abb;
   color: #fff; }
   .event-date:after {
     position: absolute;
@@ -8429,7 +8430,7 @@ h1, h2, h3, h4, h5,
     background: #28a745; }
 
 .active-date {
-  background: #cd4dcc;
+  background: #DA0063;
   color: #fff; }
 
 .event-date.active-date {

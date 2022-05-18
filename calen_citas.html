@@ -66,7 +66,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
-              <h1 class="heading-section">Configuración Atención</h1>
+              <h1 class="heading-section texto">Configuración Atención</h1>
             </div>
           </div>
           <div class="row">
@@ -82,7 +82,7 @@
                     <table class="months-table w-100">
                       <tbody>
                         <tr class="months-row">
-                          <td class="month">Jan</td>
+                          <td class="month">Ene</td>
                           <td class="month">Feb</td>
                           <td class="month">Mar</td>
                           <td class="month">Apr</td>
@@ -99,13 +99,13 @@
                     </table>
     
                     <table class="days-table w-100">
-                      <td class="day">Sun</td>
-                      <td class="day">Mon</td>
-                      <td class="day">Tue</td>
-                      <td class="day">Wed</td>
-                      <td class="day">Thu</td>
-                      <td class="day">Fri</td>
-                      <td class="day">Sat</td>
+                      <td class="day">Dom</td>
+                      <td class="day">Lun</td>
+                      <td class="day">Mar</td>
+                      <td class="day">Mie</td>
+                      <td class="day">Jue</td>
+                      <td class="day">Vie</td>
+                      <td class="day">Sab</td>
                     </table>
                     <div class="frame">
                       <table class="dates-table w-100">
@@ -113,20 +113,19 @@
                         </tbody>
                       </table>
                     </div>
-                    <button class="button" id="add-button">Add Event</button>
+                    <button class="button" id="add-button">Añadir evento</button>
                   </div>
                 </div>
                 <div class="events-container">
                 </div>
                 <div class="dialog" id="dialog">
-                  <h2 class="dialog-header"> Add New Event </h2>
+                  <h2 class="dialog-header"> Nueva cita </h2>
                   <form class="form" id="form">
                     <div class="form-container" align="center">
-                      <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
+                      <label class="form-label" id="valueFromMyButton" for="name">Nombre paciente</label>
                       <input class="input" type="text" id="name" maxlength="36">
-                      <label class="form-label" id="valueFromMyButton" for="count">Number of people to
-                        invite</label>
-                      <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+                      <label class="form-label" id="valueFromMyButton" for="count">Hora de Atención	</label>
+                      <input class="input" type="text" id="count" min="0" max="1000000" maxlength="7">
                       <input type="button" value="Cancel" class="button" id="cancel-button">
                       <input type="button" value="OK" class="button button-white" id="ok-button">
                     </div>
