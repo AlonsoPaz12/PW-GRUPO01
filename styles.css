@@ -103,10 +103,19 @@ h1 {
 
 }
 
+tr {
+    width: 50%;
+    margin: 0 auto;
+}
+
 
 /*PARA QUE EL FOOTER SE PONGA ABAJO*/
 body{
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+}
+
+.card {
+    min-width: 570px;
 }
