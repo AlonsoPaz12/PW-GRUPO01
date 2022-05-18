@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Cita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+<body>
+ <header class="fondo-nav p-3 text-white">
+  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="26" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+    </a>
+
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+      <li><a href="#" class="nav-link px-2 text-white">Opciones</a></li>
+      <li><a href="#" class="nav-link px-2 text-white">Cerrar sesión</a></li>
+    </ul>
+
+    <div class="text-end">
+      <button type="button" class="btn btn-outline-light me-2">Iniciar sesión</button>
+      <button type="button" class="btn btn-warning">Registrarse</button><!--bnt-warning-->
+    </div>
+  </div>
+</div>
+</header>
+
+  <h3 class="titulo row m-6 mt-4 mb-3 boder-bottom">
+    <span class="text-end col tit1 p-0">Reservar</span>
+    <span class="text-start col tit2 p-0">Cita</span>
+  </h3>
+
+    <div class="col-md-5 mx-auto">
+      <div class="card container">
+        <div class="card-body">
+          <legend class="subtitulo-form ms-3">Fecha y Ubicación</legend>
+          <form action="">
+            <div class="row">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="virtualRadio" id="virtualRadio" value="virtual">
+                <label class="form-check-label" for="virtualRadio">Virtual</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="presencialRadio" id="presencialRadio" value="presencial">
+                <label class="form-check-label" for="presencialRadio">Presecial</label>
+              </div>
+            </div>
+              
+              <div class="form-group col-4">
+                <div class="input-group col- col-form-label pt-3">
+                  <label class="input-group-text" for="cardID"><i class="fa fa-id-badge"></i></label>
+                  <input type="text" class="form-control" id="cardID" placeholder="Nombre que figura en tarjeta" required>
+                </div>
+              </div>
+
+              <div class="form-group col col-form-label-2 pt-3 ">
+                <label>Dirección de facturación</label>
+                <input type="text" class="form-control" required>
+              </div>
+            </div>
+
+              <h4 class="mt-4">Datos de Tarjeta</h4>
+              <div class="row pb-3">
+                <div class="input-group col col-form-label pt-3">
+                    <label class="input-group-text" for="cardNum"><i class="fa fa-credit-card"></i></label>
+                    <input type="text" class="form-control" id="cardNum" placeholder="Número Tarjeta" required>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <div class="form-group col col-form-label pt-3">
+                  <input type="number" class="form-control" id="cardFechaVen" placeholder="Fecha Vencimiento" required>
+                </div>
+
+                <div class="form-group col-4">
+                  <div class="input-group col-1 col-form-label pt-3">
+                    <label class="input-group-text" for="cardCVV"><i class="fa fa-key"></i></label>
+                    <input type="text" class="form-control" id="cardCVV" placeholder="CVV" required>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          <button class="btn btn-success boton">Reservar Cita</button>
+          </form>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" integrity="sha512-x/vqovXY/Q4b+rNjgiheBsA/vbWA3IVvsS8lkQSX1gQ4ggSJx38oI2vREZXpTzhAv6tNUaX81E7QBBzkpDQayA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js" integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/css/tempusdominus-bootstrap-4.min.css" crossorigin="anonymous"/>
+</body>
+</html>
