@@ -20,39 +20,34 @@
 
 <body>
 
-  <div class="container border border-primary">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid border border-danger">
-          <a class="navbar-brand" href="#">MedicFast</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active float-end" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle float-end" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Mi cuenta
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Configuración</a></li>
-                  <li><a class="dropdown-item" href="#">Mis citas</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">Cerrar Sesión</a>
-              </li>
-            </ul>
-          </div>
+  <!-----------------------------NAVBAR----------------------------->
+  <nav class="fondo-nav navbar navbar-expand-md navbar-light">
+    <!--Branding-->
+    <a href="principal.html" class="navbar-brand">
+      <img src="images/Logo.png" alt="" width="60%" class="ps-4">
+    </a>
+    <!--Btn-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" 
+    aria-controls="mainNav" aria-expanded="false" aria-label="Barra de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Items-->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <div class="nav ms-auto">
+        <div class="nav pe-3">
+          <a href="principal.html" class="text-nav nav-link active">Inicio</a>
+          <a href="" class="text-nav nav-link">Mi cuenta</a>
+          <a href="" class="text-nav nav-link">Cerrar Sesión</a>
         </div>
-      </nav>
+      </div>
     </div>
+  </nav>
+
+  
+  
+  
+  <div class="container">
+    
 
     <table class="table table-hover">
       <thead>
@@ -143,29 +138,32 @@
   </div>
 
   <footer class="footer-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-3 item">
-          <h3>Servicios</h3>
-          <ul>
-            <li><a>Reglas</a></li>
-            <li><a>Términos</a></li>
-            <li><a>Nosotros</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 item text">
-          <h3>MedicFast</h3>
-          <p>Esta página web fue hecha por estudiantes de Ingeniería de Sistemas de la Universidad de Lima en el ciclo
-            2022-1</p>
-        </div>
-        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-              class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a><a
-            href="#"><i class="icon ion-social-instagram"></i></a></div>
-      </div>
-      <p class="copyright">MedicFast © 2022</p>
-    </div>
-
-  </footer>
+		<div class="container" height="70%">
+			<div class="row">
+				<div class="col-sm item">
+					<h3>Servicios</h3>
+					<ul>
+						<li><a>Reglas</a></li>
+						<li><a>Términos</a></li>
+						<li><a>Nosotros</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 item text">
+					<h3>MedicFast</h3>
+					<p>Esta página web fue hecha por estudiantes de Ingeniería de Sistemas de la Universidad de Lima en el ciclo
+						2022-1</p>
+				</div>
+				<!--ÍCONOS-->
+				<div class="col-sm item social">
+					<a href="#"><i class="icon ion-social-facebook"></i></a>
+					<a href="#"><i class="icon ion-social-twitter"></i></a>
+					<a href="#"><i class="icon ion-social-youtube"></i></a>
+					<a href="#"><i class="icon ion-social-instagram"></i></a>
+				</div>
+			</div>
+			<p class="copyright">MedicFast © 2022</p>
+		</div>
+	</footer>
 </body>
 
 </html>
