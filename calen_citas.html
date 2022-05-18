@@ -18,7 +18,11 @@
     crossorigin="anonymous"></script>
     
   <title>Document</title>
-  
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/calendario.css">
   <link rel="stylesheet" href="fonts/ionicons.min.css">
   
   <link rel="stylesheet" href="footer.css">
@@ -48,7 +52,7 @@
     </div>
           
   </nav>
-
+ <!----------------------------------CALENDARIO---------------------------------->
   <div>
     <div class="col-md-6 mx-auto">
       <header class="border-bottom">
@@ -57,9 +61,93 @@
           <span class="text-start col tit2 p-0">Fast</span>
         </h1>
       </header>
-      <h2 class="subtitulo-form ms-3 mt-4">Configuración Atención</h2>
+      
+      <section class="ftco-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+              <h1 class="heading-section texto">Configuración Atención</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="content w-100">
+                <div class="calendar-container">
+                  <div class="calendar">
+                    <div class="year-header">
+                      <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                      <span class="year" id="label"></span>
+                      <span class="right-button fa fa-chevron-right" id="next"> </span>
+                    </div>
+                    <table class="months-table w-100">
+                      <tbody>
+                        <tr class="months-row">
+                          <td class="month">Ene</td>
+                          <td class="month">Feb</td>
+                          <td class="month">Mar</td>
+                          <td class="month">Apr</td>
+                          <td class="month">May</td>
+                          <td class="month">Jun</td>
+                          <td class="month">Jul</td>
+                          <td class="month">Aug</td>
+                          <td class="month">Sep</td>
+                          <td class="month">Oct</td>
+                          <td class="month">Nov</td>
+                          <td class="month">Dec</td>
+                        </tr>
+                      </tbody>
+                    </table>
+    
+                    <table class="days-table w-100">
+                      <td class="day">Dom</td>
+                      <td class="day">Lun</td>
+                      <td class="day">Mar</td>
+                      <td class="day">Mie</td>
+                      <td class="day">Jue</td>
+                      <td class="day">Vie</td>
+                      <td class="day">Sab</td>
+                    </table>
+                    <div class="frame">
+                      <table class="dates-table w-100">
+                        <tbody class="tbody">
+                        </tbody>
+                      </table>
+                    </div>
+                    <button class="button" id="add-button">Añadir evento</button>
+                  </div>
+                </div>
+                <div class="events-container">
+                </div>
+                <div class="dialog" id="dialog">
+                  <h2 class="dialog-header"> Nueva cita </h2>
+                  <form class="form" id="form">
+                    <div class="form-container" align="center">
+                      <label class="form-label" id="valueFromMyButton" for="name">Nombre paciente</label>
+                      <input class="input" type="text" id="name" maxlength="36">
+                      <label class="form-label" id="valueFromMyButton" for="count">Hora de Atención	</label>
+                      <input class="input" type="text" id="count" min="0" max="1000000" maxlength="7">
+                      <input type="button" value="Cancel" class="button" id="cancel-button">
+                      <input type="button" value="OK" class="button button-white" id="ok-button">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+
+
+     
     </div>
   </div>
+
+
 
   <!----------------------------------FOOTER---------------------------------->
   <footer class="footer-dark">
