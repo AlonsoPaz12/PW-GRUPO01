@@ -35,4 +35,9 @@
   /* Cuando presione que se quede en naranja */
   input[type="radio"]:checked ~ label {
     color: orange;
+<<<<<<< HEAD
   }
+=======
+  }
+  
+>>>>>>> Diego
