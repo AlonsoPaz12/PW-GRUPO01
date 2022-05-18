@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="boton.css">
@@ -18,71 +20,77 @@
   <link rel="stylesheet" href="/inicio_estilo/css/">
   <title>Document</title>
 </head>
+
 <body>
-  
+
   <section class="features-boxed">
     <div class="container">
-        <div class="intro">
-            <h2 class="text-center">Pantalla de inicio</h2>
-            <p class="text-center">A continuación, se muestran algunas opciones</p>
+      <div class="intro">
+        <h2 class="text-center">Pantalla de inicio de Paciente</h2>
+        <p class="text-center">A continuación, se muestran algunas opciones</p>
+      </div>
+
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box">
+            <i class="fa fa-check-circle-o icon"></i>
+            <h3 class="name">Recomendacion de doctores</h3>
+            <p class="description">Visualizar doctores</p>
+            <a href="reco_med.html"><button class="btn btn-primary">Recomendación doctor</button></a>
+          </div>
         </div>
 
-
-        <div class="row justify-content-center features">
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box">
-                    <i class="fa fa-user-md icon"></i>
-                    <h3 class="name">Recomendacion de doctores</h3>
-                    <p class="description">Visualizar doctores</p>
-                    <a href="/his_aten.html"><button class="btn btn-primary">Recomendación doctor</button></a>
-                </div>
-            </div>
-
-
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-sticky-note-o icon"></i>
-                    <h3 class="name">Manejo de citas</h3>
-                    <p class="description">realizar los manejos de citas</p>
-                    <a href=""><button class="btn btn-primary">Manejo de citas</button></a>
-                </div>
-            </div>
-
-
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa  icon"></i>
-                    <h3 class="name">Consultas</h3>
-                    <p class="description">ver historial de consultas</p>
-                    <a href=""><button class="btn btn-primary">Consultas</button></a>
-                </div>
-            </div>
-
-
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-commenting-o icon"></i>
-                    <h3 class="name">Preguntas</h3>
-                    <p class="description">Realizar preguntas a los medicos</p>
-                    <a href=""><button class="btn btn-primary">Preguntas</button></a>
-                </div>
-            </div>
-
-            
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-calendar icon"></i>
-                    <h3 class="name">Calendario</h3>
-                    <p class="description">Ver calendario</p>
-                    <a href=""><button class="btn btn-primary">Calendario</button> </a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-user icon"></i>
-                    <h3 class="name">Paciente</h3>
-                    <p class="description">Ver la info de paciente</p>
-                    <a href=""><button class="btn btn-primary">paciente</button></a>
-                </div>
-            </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box"><i class="fa fa-user-md icon"></i>
+            <h3 class="name">Perfiles de Médicos</h3>
+            <p class="description">Ver perfiles de médicos</p>
+            <a href="perfil_med.html"><button class="btn btn-primary">Perfiles de médicos</button></a>
+          </div>
         </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box"><i class="fa fa-list-alt icon"></i>
+            <h3 class="name">Listado de Consultas</h3>
+            <p class="description">ver historial de consultas</p>
+            <a href="citas_pac.html"><button class="btn btn-primary">Consultas</button></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box"><i class="fa fa-commenting-o icon"></i>
+            <h3 class="name">Preguntas Públicas</h3>
+            <p class="description">Realizar preguntas a los medicos</p>
+            <a href="preg_pac.html"><button class="btn btn-primary">Preguntas</button></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box"><i class="fa fa-calendar icon"></i>
+            <h3 class="name">Atenciones realizadas</h3>
+            <p class="description">Ver atenciones realizadas</p>
+            <a href="his_aten.html"><button class="btn btn-primary">Atenciones</button> </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box"><i class="fa fa-cog icon"></i>
+            <h3 class="name">Editar información</h3>
+            <p class="description">Editar información de paciente</p>
+            <a href=""><button class="btn btn-primary">Editar</button></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box"><i class="fa fa-sticky-note-o icon"></i>
+            <h3 class="name">Reservar cita</h3>
+            <p class="description">Reservar cita</p>
+            <a href=""><button class="btn btn-primary">Reservar</button></a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <script src="admin-assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
