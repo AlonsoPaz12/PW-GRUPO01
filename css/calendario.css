@@ -8427,14 +8427,14 @@ h1, h2, h3, h4, h5,
     height: 10px;
     border-radius: 50%;
     content: '';
-    background: #28a745; }
+    background: #77C13B; }
 
 .active-date {
   background: #DA0063;
   color: #fff; }
 
 .event-date.active-date {
-  background: #7e0cf5; }
+  background: #ff008df0; }
 
 /* input dialog */
 .dialog {
